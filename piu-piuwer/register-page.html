@@ -1,0 +1,70 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/register-page.css">
+	<link rel="icon" type="favicon/ico" href="img/bird.svg">
+	
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card register-card">
+			<div class="card-header">
+				<div class="d-flex justify-content-center icon">
+					<img src="img/bird.svg" alt="Logo">
+				</div>
+			</div>
+			<br> <br>
+			<div class="card-header">
+				<h3>Entrar no Piu Piuwer</h3>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<input type="text" class="form-control field" placeholder="Usuário" required>
+						
+					</div>
+					<div class="input-group form-group">
+						<input type="text" class="form-control field" placeholder="Nome" required>	
+					</div>
+					<div class="input-group form-group">
+						<input type="text" class="form-control field" placeholder="Data de nascimento" onfocus="(this.type='date')" required>	
+					</div>
+					<div class="input-group form-group">
+						<input type="password" class="form-control field" placeholder="Senha" required>
+					</div>
+					<div class="input-group form-group">
+						  <label class="custom-file-label field" for="inputGroupFile01">Selecione sua foto</label>
+						  <input type="file" class="custom-file-input" id="inputGroupFile01">
+					</div>
+					<div class="col text-center">
+						<button class="btn rounded form-button" type="submit">Cadastrar!</button>
+					  </div>
+				</form>
+			</div>
+				<div class="card-footer">
+					<div class="d-flex justify-content-center links">
+						<a href="login-page.html">Já é um piuwer? Entre aqui!</a>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// Script used to change the "Escolha arquivo" field text
+	$(".custom-file-input").on("change", function() {
+	  var fileName = $(this).val().split("\\").pop();
+	  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+	});
+	</script>
+
+</body>
+</html>

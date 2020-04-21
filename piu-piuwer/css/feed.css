@@ -1,0 +1,37 @@
+.feed-card{
+    overflow:auto;
+}
+.imagem-feed{
+    width: 70px;
+}
+
+.nome-piu{
+    color: #006494
+}
+
+.user-piu{
+    color: #58626C
+}
+.action-image{
+    width: 20px;
+}
+    
+.container-destacado{
+    background-color: #FFFFE0;
+}
+
+.icon-feed img{
+    width: 40px;
+    }
+.options{
+    background-color: #031D44;
+    position: absolute;
+    left: -59px;
+    border-radius: 10%;
+}
+.text-primary{
+    color: white;
+}
+.user-image{
+    width: 80px;
+}
